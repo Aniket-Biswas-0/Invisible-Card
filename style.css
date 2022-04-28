@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: url(Images/Background.jpg) no-repeat center;
+    
+}
+.card-wrapper{
+    height: 600px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(Images/Background.jpg) no-repeat center;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: box-shadow 1s;
+}
+.card-wrapper:hover{
+    box-shadow: 0 0 30px #fff;
+}
+.card{
+    position: absolute;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(185deg, rgba(4, 37, 255, 0.8) 1%, rgb(241, 3, 3, .8));
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s .8s;
+}
+.card-wrapper:hover .card{
+    top: 0;
+}
+.card-img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 20px 30px 40px rgba(0, 0, 0, .6);
+}
+.card-heading{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: aquamarine;
+    letter-spacing: 2px;
+    background: linear-gradient(rgb(226, 52, 52), rgba(19, 50, 255, 0.8));
+    width: 55%;
+    text-align: center;
+    padding: 5px 0;
+    transform: perspective(1000px) skewX(-20deg) rotateY(30deg);
+}
+.card-paragraph{
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 85%;
+}
+.card-icons{
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.card-icon-link{
+    text-decoration: none;
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: border .3s;
+}
+.card-icon-link:hover{
+    border: 1px solid rgb(75, 108, 255);
+}
+.card-icon{
+    font-size: 20px;
+    color: aquamarine;
+    transition: color .3s;
+}
+.card-icon-link:hover .card-icon{
+    color:rgb(75, 108, 255);
+}
+.card-btn{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background: linear-gradient(#7848fb, #0135c5);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 8px 12px 12px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
