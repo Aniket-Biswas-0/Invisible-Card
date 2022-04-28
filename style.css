@@ -55,7 +55,7 @@
     font-size: 25px;
     margin-top: 20px;
     text-transform: uppercase;
-    color: aquamarine;
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
     background: linear-gradient(rgb(226, 52, 52), rgba(19, 50, 255, 0.8));
     width: 55%;
